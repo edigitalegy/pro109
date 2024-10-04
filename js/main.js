@@ -1,18 +1,6 @@
-const readMoreBtn = document.querySelector('.readMoreBtn');
-const text = document.querySelector('.text');
+const readMoreBtn = document.getElementById("readMoreBtns");
+const text = document.getElementById("texts");
 
-
-const readMoreBtns = document.querySelector('.readMoreBtns');
-const texts = document.querySelector('.texts');
-
-readMoreBtns.addEventListener('click',(e)=>{
-  texts.classList.toggle('show-more');
-  if(readMoreBtns.innerText === 'المزيد'){
-    readMoreBtns.innerText = 'أقل';
-  }else{
-    readMoreBtns.innerText = 'المزيد';
-  }
-})
 
 readMoreBtn.addEventListener('click',(e)=>{
   text.classList.toggle('show-more');
